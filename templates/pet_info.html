@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+<h1 class="text-center">Hi i am {{pet.name}} <a class="btn btn-success m-1" href="/pet/{{pet.id}}/edit">Edit</a><a class="btn btn-outline-warning m-1" href="/">Back</a></h1>
+
+<img src="{{pet.photo}}" class="mx-auto d-block img-fluid h " alt="...">
+    <p class="text-center">Hi my name is {{pet.name}} and i am {{pet.age}} years old {{pet.speacies}}. Awso i am {{pet.notes}}</p>
+
+   
+</div>
+{% endblock %}
